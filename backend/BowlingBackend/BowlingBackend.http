@@ -1,0 +1,6 @@
+@BowlingBackend_HostAddress = http://localhost:5122
+
+GET {{BowlingBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
