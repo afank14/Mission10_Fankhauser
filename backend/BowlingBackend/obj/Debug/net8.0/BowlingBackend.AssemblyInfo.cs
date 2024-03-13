@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BowlingBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43ef8489880e5601bfd812e44e9c5a05c010f81d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eb9d0b90e63eb0553af9d5d079e2965ae712adb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BowlingBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BowlingBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
