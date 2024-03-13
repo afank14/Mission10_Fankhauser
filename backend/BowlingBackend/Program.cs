@@ -10,12 +10,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// AddCors for fetching the data with react
 builder.Services.AddCors();
 
+// Add the option to use Sqlite
 builder.Services.AddDbContext<BowlingLeagueContext>(options =>
     options.UseSqlite(builder.Configuration["ConnectionStrings:BowlingConnection"])
 );
 
+// add scoped repository
 builder.Services.AddScoped<IBowlerRepository, EFBowlerRepository>();
 
 var app = builder.Build();
@@ -27,6 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// use cors from the origin of my react app for data fetch
 app.UseCors(p => p.WithOrigins("http://localhost:3000"));
 
 app.UseHttpsRedirection();

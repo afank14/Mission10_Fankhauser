@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BowlingBackend.Models;
 
+// This file was made by the scaffolding command. 
 public partial class BowlingLeagueContext : DbContext
 {
     public BowlingLeagueContext()
@@ -37,6 +38,7 @@ public partial class BowlingLeagueContext : DbContext
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlite("Data Source=BowlingLeague.sqlite");
 
+    // The following code was created by the scaffold and handles all the foreign and primary key constraints
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Bowler>(entity =>

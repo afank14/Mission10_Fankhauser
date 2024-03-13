@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace BowlingBackend.Models;
 
+// Main model to pull from. Created by the scaffold command.
+// The Context file has code that handles foreign/primary key constraints
 public partial class Bowler
 {
     public int BowlerId { get; set; }

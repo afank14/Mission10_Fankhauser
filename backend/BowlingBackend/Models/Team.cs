@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace BowlingBackend.Models;
 
+// A secondary model that will be pulled from in this project, also created by the scaffold command
 public partial class Team
 {
     public int TeamId { get; set; }
@@ -12,6 +13,7 @@ public partial class Team
 
     public int? CaptainId { get; set; }
 
+    // Add JsonIgnore here so that there isn't a loop when including team with the Bowlers in linq
     [JsonIgnore]
     public virtual ICollection<Bowler> Bowlers { get; set; } = new List<Bowler>();
 
